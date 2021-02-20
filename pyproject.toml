@@ -7,6 +7,16 @@ authors = ["François <francois.culiere@gmail.com>"]
 [tool.poetry.dependencies]
 python = "3.7.9"
 tensorflow = "^2.4.1"
+pandas = "^1.2.1"
+scikit-learn = "^0.24.1"
+tensorflow-addons = "^0.12.1"
+tqdm = "^4.56.0"
+shap = {git = "git+ssh://git@github.com/slundberg/shap.git", rev="master"}
+Flask = "^1.1.2"
+seaborn = "^0.11.1"
+graphviz = "^0.16"
+pydot = "^1.4.2"
+ipython = "^7.20.0"
 
 [tool.poetry.dev-dependencies]
 

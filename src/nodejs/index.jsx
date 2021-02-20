@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-const title = 'My Minimal React Webpack Babel Setup';
+const title = 'Car price prediction';
 
 ReactDOM.render(
-  <App/>,
+    <App/>,
   document.getElementById('app')
 );
 

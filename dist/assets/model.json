@@ -1,0 +1,1012 @@
+{
+  "format": "graph-model",
+  "generatedBy": "2.4.1",
+  "convertedBy": "TensorFlow.js Converter v3.0.0",
+  "signature": {
+    "inputs": {
+      "model_number:0": {
+        "name": "model_number:0",
+        "dtype": "DT_DOUBLE",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      },
+      "year:0": {
+        "name": "year:0",
+        "dtype": "DT_INT64",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      },
+      "mileage:0": {
+        "name": "mileage:0",
+        "dtype": "DT_INT64",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      },
+      "power:0": {
+        "name": "power:0",
+        "dtype": "DT_INT64",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      },
+      "gearbox:0": {
+        "name": "gearbox:0",
+        "dtype": "DT_STRING",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      },
+      "energy:0": {
+        "name": "energy:0",
+        "dtype": "DT_STRING",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      },
+      "consumption:0": {
+        "name": "consumption:0",
+        "dtype": "DT_DOUBLE",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      }
+    },
+    "outputs": {
+      "Identity:0": {
+        "name": "Identity:0",
+        "dtype": "DT_FLOAT",
+        "tensorShape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+      }
+    }
+  },
+  "modelTopology": {
+    "node": [
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack_1",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack_2",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/Reshape/shape/1",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": { "dtype": "DT_INT32", "tensorShape": {} }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack_1",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack_2",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/Reshape/shape/1",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": { "dtype": "DT_INT32", "tensorShape": {} }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack_1",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack_2",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/Reshape/shape/1",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": { "dtype": "DT_INT32", "tensorShape": {} }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack_1",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack_2",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/Reshape/shape/1",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": { "dtype": "DT_INT32", "tensorShape": {} }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack_1",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack_2",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_INT32",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/Reshape/shape/1",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_INT32" },
+          "value": {
+            "tensor": { "dtype": "DT_INT32", "tensorShape": {} }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/concat/axis",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": { "dtype": "DT_INT32", "tensorShape": {} }
+          },
+          "dtype": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [{ "size": "5" }, { "size": "64" }]
+              }
+            }
+          },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "64" }] }
+            }
+          },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_1/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [{ "size": "64" }, { "size": "10" }]
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_1/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "10" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_2/MatMul/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": {
+                "dim": [{ "size": "10" }, { "size": "1" }]
+              }
+            }
+          },
+          "dtype": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_2/BiasAdd/ReadVariableOp",
+        "op": "Const",
+        "attr": {
+          "dtype": { "type": "DT_FLOAT" },
+          "value": {
+            "tensor": {
+              "dtype": "DT_FLOAT",
+              "tensorShape": { "dim": [{ "size": "1" }] }
+            }
+          }
+        }
+      },
+      {
+        "name": "consumption",
+        "op": "Placeholder",
+        "attr": {
+          "dtype": { "type": "DT_DOUBLE" },
+          "shape": {
+            "shape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+          }
+        }
+      },
+      {
+        "name": "energy",
+        "op": "Placeholder",
+        "attr": {
+          "shape": {
+            "shape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+          },
+          "dtype": { "type": "DT_STRING" }
+        }
+      },
+      {
+        "name": "gearbox",
+        "op": "Placeholder",
+        "attr": {
+          "shape": {
+            "shape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+          },
+          "dtype": { "type": "DT_STRING" }
+        }
+      },
+      {
+        "name": "mileage",
+        "op": "Placeholder",
+        "attr": {
+          "dtype": { "type": "DT_INT64" },
+          "shape": {
+            "shape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+          }
+        }
+      },
+      {
+        "name": "model_number",
+        "op": "Placeholder",
+        "attr": {
+          "shape": {
+            "shape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+          },
+          "dtype": { "type": "DT_DOUBLE" }
+        }
+      },
+      {
+        "name": "power",
+        "op": "Placeholder",
+        "attr": {
+          "dtype": { "type": "DT_INT64" },
+          "shape": {
+            "shape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+          }
+        }
+      },
+      {
+        "name": "year",
+        "op": "Placeholder",
+        "attr": {
+          "shape": {
+            "shape": { "dim": [{ "size": "-1" }, { "size": "1" }] }
+          },
+          "dtype": { "type": "DT_INT64" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/Cast",
+        "op": "Cast",
+        "input": ["consumption"],
+        "attr": {
+          "SrcT": { "type": "DT_DOUBLE" },
+          "Truncate": { "b": false },
+          "DstT": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/Cast",
+        "op": "Cast",
+        "input": ["mileage"],
+        "attr": {
+          "Truncate": { "b": false },
+          "DstT": { "type": "DT_FLOAT" },
+          "SrcT": { "type": "DT_INT64" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/Cast_1",
+        "op": "Cast",
+        "input": ["model_number"],
+        "attr": {
+          "SrcT": { "type": "DT_DOUBLE" },
+          "DstT": { "type": "DT_FLOAT" },
+          "Truncate": { "b": false }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/Cast",
+        "op": "Cast",
+        "input": ["power"],
+        "attr": {
+          "DstT": { "type": "DT_FLOAT" },
+          "Truncate": { "b": false },
+          "SrcT": { "type": "DT_INT64" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/Cast",
+        "op": "Cast",
+        "input": ["year"],
+        "attr": {
+          "SrcT": { "type": "DT_INT64" },
+          "Truncate": { "b": false },
+          "DstT": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/Shape",
+        "op": "Shape",
+        "input": ["StatefulPartitionedCall/sequential/Cast"],
+        "attr": {
+          "out_type": { "type": "DT_INT32" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/Shape",
+        "op": "Shape",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/mileage/Cast"
+        ],
+        "attr": {
+          "T": { "type": "DT_FLOAT" },
+          "out_type": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/Shape",
+        "op": "Shape",
+        "input": ["StatefulPartitionedCall/sequential/Cast_1"],
+        "attr": {
+          "out_type": { "type": "DT_INT32" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/Shape",
+        "op": "Shape",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/power/Cast"
+        ],
+        "attr": {
+          "out_type": { "type": "DT_INT32" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/Shape",
+        "op": "Shape",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/year/Cast"
+        ],
+        "attr": {
+          "out_type": { "type": "DT_INT32" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice",
+        "op": "StridedSlice",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/consumption/Shape",
+          "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack",
+          "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack_1",
+          "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack_2"
+        ],
+        "attr": {
+          "T": { "type": "DT_INT32" },
+          "begin_mask": { "i": "0" },
+          "new_axis_mask": { "i": "0" },
+          "ellipsis_mask": { "i": "0" },
+          "end_mask": { "i": "0" },
+          "shrink_axis_mask": { "i": "1" },
+          "Index": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice",
+        "op": "StridedSlice",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/mileage/Shape",
+          "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack",
+          "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack_1",
+          "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack_2"
+        ],
+        "attr": {
+          "T": { "type": "DT_INT32" },
+          "end_mask": { "i": "0" },
+          "new_axis_mask": { "i": "0" },
+          "begin_mask": { "i": "0" },
+          "ellipsis_mask": { "i": "0" },
+          "Index": { "type": "DT_INT32" },
+          "shrink_axis_mask": { "i": "1" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice",
+        "op": "StridedSlice",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/model_number/Shape",
+          "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack",
+          "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack_1",
+          "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack_2"
+        ],
+        "attr": {
+          "begin_mask": { "i": "0" },
+          "end_mask": { "i": "0" },
+          "new_axis_mask": { "i": "0" },
+          "T": { "type": "DT_INT32" },
+          "ellipsis_mask": { "i": "0" },
+          "Index": { "type": "DT_INT32" },
+          "shrink_axis_mask": { "i": "1" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/strided_slice",
+        "op": "StridedSlice",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/power/Shape",
+          "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack",
+          "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack_1",
+          "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack_2"
+        ],
+        "attr": {
+          "ellipsis_mask": { "i": "0" },
+          "end_mask": { "i": "0" },
+          "Index": { "type": "DT_INT32" },
+          "begin_mask": { "i": "0" },
+          "T": { "type": "DT_INT32" },
+          "shrink_axis_mask": { "i": "1" },
+          "new_axis_mask": { "i": "0" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/strided_slice",
+        "op": "StridedSlice",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/year/Shape",
+          "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack",
+          "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack_1",
+          "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack_2"
+        ],
+        "attr": {
+          "begin_mask": { "i": "0" },
+          "shrink_axis_mask": { "i": "1" },
+          "Index": { "type": "DT_INT32" },
+          "ellipsis_mask": { "i": "0" },
+          "new_axis_mask": { "i": "0" },
+          "end_mask": { "i": "0" },
+          "T": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/Reshape/shape",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice",
+          "StatefulPartitionedCall/sequential/dense_features/consumption/Reshape/shape/1"
+        ],
+        "attr": {
+          "N": { "i": "2" },
+          "axis": { "i": "0" },
+          "T": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/Reshape/shape",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice",
+          "StatefulPartitionedCall/sequential/dense_features/mileage/Reshape/shape/1"
+        ],
+        "attr": {
+          "T": { "type": "DT_INT32" },
+          "axis": { "i": "0" },
+          "N": { "i": "2" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/Reshape/shape",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice",
+          "StatefulPartitionedCall/sequential/dense_features/model_number/Reshape/shape/1"
+        ],
+        "attr": {
+          "N": { "i": "2" },
+          "T": { "type": "DT_INT32" },
+          "axis": { "i": "0" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/Reshape/shape",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/power/strided_slice",
+          "StatefulPartitionedCall/sequential/dense_features/power/Reshape/shape/1"
+        ],
+        "attr": {
+          "N": { "i": "2" },
+          "T": { "type": "DT_INT32" },
+          "axis": { "i": "0" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/Reshape/shape",
+        "op": "Pack",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/year/strided_slice",
+          "StatefulPartitionedCall/sequential/dense_features/year/Reshape/shape/1"
+        ],
+        "attr": {
+          "N": { "i": "2" },
+          "axis": { "i": "0" },
+          "T": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/consumption/Reshape",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/sequential/Cast",
+          "StatefulPartitionedCall/sequential/dense_features/consumption/Reshape/shape"
+        ],
+        "attr": {
+          "Tshape": { "type": "DT_INT32" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/mileage/Reshape",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/mileage/Cast",
+          "StatefulPartitionedCall/sequential/dense_features/mileage/Reshape/shape"
+        ],
+        "attr": {
+          "Tshape": { "type": "DT_INT32" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/model_number/Reshape",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/sequential/Cast_1",
+          "StatefulPartitionedCall/sequential/dense_features/model_number/Reshape/shape"
+        ],
+        "attr": {
+          "T": { "type": "DT_FLOAT" },
+          "Tshape": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/power/Reshape",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/power/Cast",
+          "StatefulPartitionedCall/sequential/dense_features/power/Reshape/shape"
+        ],
+        "attr": {
+          "Tshape": { "type": "DT_INT32" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/year/Reshape",
+        "op": "Reshape",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/year/Cast",
+          "StatefulPartitionedCall/sequential/dense_features/year/Reshape/shape"
+        ],
+        "attr": {
+          "T": { "type": "DT_FLOAT" },
+          "Tshape": { "type": "DT_INT32" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_features/concat",
+        "op": "ConcatV2",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/consumption/Reshape",
+          "StatefulPartitionedCall/sequential/dense_features/mileage/Reshape",
+          "StatefulPartitionedCall/sequential/dense_features/model_number/Reshape",
+          "StatefulPartitionedCall/sequential/dense_features/power/Reshape",
+          "StatefulPartitionedCall/sequential/dense_features/year/Reshape",
+          "StatefulPartitionedCall/sequential/dense_features/concat/axis"
+        ],
+        "attr": {
+          "Tidx": { "type": "DT_INT32" },
+          "N": { "i": "5" },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense/Relu",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_features/concat",
+          "StatefulPartitionedCall/sequential/dense/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/sequential/dense/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "transpose_a": { "b": false },
+          "epsilon": { "f": 0.0 },
+          "num_args": { "i": "1" },
+          "transpose_b": { "b": false },
+          "fused_ops": {
+            "list": { "s": ["Qmlhc0FkZA==", "UmVsdQ=="] }
+          },
+          "T": { "type": "DT_FLOAT" }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_1/Relu",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense/Relu",
+          "StatefulPartitionedCall/sequential/dense_1/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/sequential/dense_1/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "T": { "type": "DT_FLOAT" },
+          "transpose_b": { "b": false },
+          "transpose_a": { "b": false },
+          "epsilon": { "f": 0.0 },
+          "num_args": { "i": "1" },
+          "fused_ops": {
+            "list": { "s": ["Qmlhc0FkZA==", "UmVsdQ=="] }
+          }
+        }
+      },
+      {
+        "name": "StatefulPartitionedCall/sequential/dense_2/BiasAdd",
+        "op": "_FusedMatMul",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_1/Relu",
+          "StatefulPartitionedCall/sequential/dense_2/MatMul/ReadVariableOp",
+          "StatefulPartitionedCall/sequential/dense_2/BiasAdd/ReadVariableOp"
+        ],
+        "device": "/device:CPU:0",
+        "attr": {
+          "T": { "type": "DT_FLOAT" },
+          "epsilon": { "f": 0.0 },
+          "transpose_a": { "b": false },
+          "transpose_b": { "b": false },
+          "fused_ops": { "list": { "s": ["Qmlhc0FkZA=="] } },
+          "num_args": { "i": "1" }
+        }
+      },
+      {
+        "name": "Identity",
+        "op": "Identity",
+        "input": [
+          "StatefulPartitionedCall/sequential/dense_2/BiasAdd"
+        ],
+        "attr": { "T": { "type": "DT_FLOAT" } }
+      }
+    ],
+    "library": {},
+    "versions": { "producer": 561 }
+  },
+  "weightsManifest": [
+    {
+      "paths": ["group1-shard1of1.bin"],
+      "weights": [
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack_1",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/consumption/strided_slice/stack_2",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/consumption/Reshape/shape/1",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack_1",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/mileage/strided_slice/stack_2",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/mileage/Reshape/shape/1",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack_1",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/model_number/strided_slice/stack_2",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/model_number/Reshape/shape/1",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack_1",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/power/strided_slice/stack_2",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/power/Reshape/shape/1",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack_1",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/year/strided_slice/stack_2",
+          "shape": [1],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/year/Reshape/shape/1",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_features/concat/axis",
+          "shape": [],
+          "dtype": "int32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense/MatMul/ReadVariableOp",
+          "shape": [5, 64],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense/BiasAdd/ReadVariableOp",
+          "shape": [64],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_1/MatMul/ReadVariableOp",
+          "shape": [64, 10],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_1/BiasAdd/ReadVariableOp",
+          "shape": [10],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_2/MatMul/ReadVariableOp",
+          "shape": [10, 1],
+          "dtype": "float32"
+        },
+        {
+          "name": "StatefulPartitionedCall/sequential/dense_2/BiasAdd/ReadVariableOp",
+          "shape": [1],
+          "dtype": "float32"
+        }
+      ]
+    }
+  ]
+}

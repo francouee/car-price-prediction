@@ -1,0 +1,77 @@
+body{
+    background-color: #F7F9FC;
+    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+}
+/* Header */
+.container {
+    text-align: center;
+}
+
+.chart-wrapper {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.jumbotron {
+    padding:1rem 1rem;
+    margin-bottom:20px;
+}
+
+.lead {
+    margin-bottom:0px;
+}
+
+#plot-wrapper {
+    margin: 10px;
+}
+
+/* Controls */
+.custom-select {
+    width:inherit;
+}
+
+.control-wrapper {
+    display: inline-block;
+    margin-left:10px;
+}
+
+.control-wrapper input[type="range"]  {
+    vertical-align: text-bottom;;
+}
+
+.control-container {
+    border-bottom:1px solid #d3d3d3;
+    margin-bottom:10px;
+    padding-bottom:10px;
+}
+
+/* Scatter plot */
+circle {
+    cursor:pointer;
+}
+.axis-label {
+    text-anchor:middle;
+}
+
+.chart-wrapper {
+    display: inline-block;
+}
+
+
+/* Tooltips */
+.tooltip {
+    display:inline-block;
+    position:absolute;
+    border-bottom:1px dotted #666;
+    text-align:left;
+    padding:10px 20px;
+    color:#444444;
+    background-color:#EEEEEE;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    opacity: 0;
+}
