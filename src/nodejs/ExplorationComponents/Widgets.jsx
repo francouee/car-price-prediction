@@ -32,7 +32,7 @@ export default function CustomWidgets(props) {
                 >
                     <Grid item xs={6} md={2}>
                         <Typography id="discrete-slider-alpha" gutterBottom>
-                            alpha
+                            Points transparency
                         </Typography>
                         <Slider 
                             value={props.alpha} 
@@ -47,7 +47,7 @@ export default function CustomWidgets(props) {
                     </Grid>
                     <Grid item xs={6} md={2}>
                         <Typography id="discrete-slider-radius" gutterBottom>
-                            radius
+                            Points radius
                         </Typography>
                         <Slider 
                             value={props.radius} 

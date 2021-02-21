@@ -14,11 +14,15 @@ const useStyles = makeStyles({
 
 export default function AdditiveForcePlot(props) {
     const classes = useStyles();
+    const featureDict = {}
+    Object.keys(props.predictionValues).map(function(key, i){
+      featureDict[i.toString()] = {value: props.predictionValues[key], effect: props.shapValues[key]}
+    })
 
     return (
         <Card className={classes.root}>
             <AdditiveForceVisualizer
-                baseValue={20000}
+                baseValue={36072}
                 link="identity"
                 featureNames={{
                 "0": "Mileage",
@@ -28,13 +32,7 @@ export default function AdditiveForcePlot(props) {
                 "4": "Consumption"
                 }}
                 outNames={["Price"]}
-                features={{
-                "0": { value: 100000, effect: -3000 },
-                "1": { value: 2019, effect: 2000 },
-                "2": { value: 150, effect: 200 },
-                "3": { value: 4, effect: 2000 },
-                "4": { value: 6.2, effect: 100 }
-                }}
+                features={featureDict}
             />
         </Card>
         )

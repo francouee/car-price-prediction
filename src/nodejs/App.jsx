@@ -28,30 +28,8 @@ const useStyles = makeStyles(theme => ({
   }));
   
 
-function VariableSelector (props) {
-
-    const classes = useStyles();
-    const items = props.options.map((d) => {
-        return <MenuItem value={d} key={d}>{d}</MenuItem>
-    })
-    return (
-    <FormControl className={classes.formControl}> 
-        <InputLabel id={props.id + "-select-label"}>X variable</InputLabel>
-            <Select
-                id={props.id} 
-                labelId={props.id + "-select-label"}
-                value={props.current_variable} 
-                className="custom-select" 
-                onChange={(d) => setstate(d.target.value)}
-            >
-                items
-            </Select>
-    </FormControl>
-    );
-}
 
 //const model = await tf.loadGraphModel('/assets/model.json');
-
 function get_model_number(description) {
     try{
         var e = description.split(' ')
@@ -125,6 +103,8 @@ class App extends React.Component {
             canvas: true,
             alpha: 0.3,
             radius: 5,
+            predictionValues: [100000, 2019, 150, 4, 6],
+            shapValues: [-4841.7, 3667.0, -7730.7, -93.2, -11.1],
             width: (window.innerWidth > 960) ? window.innerWidth /1.4 : window.innerWidth /1.1,
             height: (window.innerWidth > 960) ? window.innerHeight/1.5 : window.innerHeight/2
         };
@@ -188,8 +168,11 @@ class App extends React.Component {
                 </div>,
             <div key={1}>
                 <ValidationTextFields 
+                    setState={this.setState.bind(this)}
                 />
                 <AdditiveForcePlot
+                    predictionValues={this.state.predictionValues}
+                    shapValues={this.state.shapValues}
                 />
             </div>
         ]
