@@ -1,5 +1,3 @@
-from collections import OrderedDict
-
 import tensorflow as tf
 import shap
 import pandas as pd
@@ -8,7 +6,6 @@ import numpy as np
 import sys
 import logging
 from pathlib import Path
-import matplotlib.pyplot as plt
 
 from src.python.neural_net import get_model_number
 

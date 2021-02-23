@@ -6,14 +6,9 @@ import AdditiveForcePlot from './PredictionComponents/AdditiveForceVisualizer'
 import './app.css';
 
 import React from 'react';
-import * as tf from '@tensorflow/tfjs';
-import * as d3 from 'd3';
+import {csv} from 'd3';
 
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
 import { makeStyles } from "@material-ui/core/styles";
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
 import SimpleTabs from './Panels'
 
 
@@ -45,7 +40,7 @@ function get_model_number(description) {
     }    
 }    
 
-var promiseData = d3.csv("/assets/data.csv").then(function(raw_data) {
+var promiseData = csv("/assets/data.csv").then(function(raw_data) {
     var data = raw_data.map(function(d) {
     return {
         price: parseInt(d["price"]),
@@ -61,36 +56,6 @@ var promiseData = d3.csv("/assets/data.csv").then(function(raw_data) {
     data = data.filter((d) => d.model_number < 8);
     return data
 });
-
-function makePrediction (data, model) {
-    var dataTensor = {}
-    // Convert data to tensor
-    Object.keys(data).map(function(key, index) {
-        var dtype
-        key === 'year' | key === 'mileage' | key === 'power' ? dtype='int32' : dtype='float32';
-        if (key === 'energy' | key === 'gearbox'){
-            dtype='string';
-        };
-        if (key !== 'price'){
-            dataTensor[key] = tf.tensor2d([data[key]], [1, 1], dtype)
-        }
-        });
-    // make prediction
-    // https://github.com/tensorflow/tfjs/issues/2254
-    let pred = model.execute(dataTensor)
-    // console.log(pred)
-    const values = pred.dataSync();
-    const arr = Array.from(values);
-    // console.log(values);
-    return arr[0]
-}
-
-// var getAllPrediction = promiseData.then(function(data) {
-//         var predictions = data.map((d) => makePrediction(d, model))
-//         return predictions
-//     })
-
-
 class App extends React.Component {
     constructor(props) {
         super(props);
